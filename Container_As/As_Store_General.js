@@ -106,7 +106,7 @@ document.querySelector('.CALA_page_Button').addEventListener('click',()=>{
 
         localStorage.setItem("user_NP",`${document.querySelector('.IP').value}/${PN}`)
 
-        if(`${document.querySelector('.IP').value}`.toLocaleLowerCase()==="yahaya abdullahi" && document.querySelector('.IPC').value === "1234567890"){
+        if(`${document.querySelector('.IP').value}`.toLocaleLowerCase() === "as abdullahi" && document.querySelector('.IPC').value === "1234567890"){
             localStorage.setItem("ADMIN",'true')
         }else{
             localStorage.setItem("ADMIN",'false')
