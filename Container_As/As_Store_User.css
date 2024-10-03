@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.body{
+    background-color:"white";
+}
 .MCD{
     border:none;
     width: 100%;
