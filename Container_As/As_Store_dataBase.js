@@ -835,7 +835,7 @@ setInterval(()=>{
                 let productQ=Number(localStorage.getItem("userOrder").split(',')[i].split('/')[1]);
 
             
-                for(let i=0;i<=PI.length;i++){
+                for(let i=0;i<PI.length;i++){
                     if(productId===PI[i].id){
 
                         //ADD COMMER TO PRICE
