@@ -830,7 +830,7 @@ setInterval(()=>{
 
             ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 
-            for(let i=0;i<=localStorage.getItem("userOrder").split(',').length;i++){
+            for(let i=0;i<localStorage.getItem("userOrder").split(',').length;i++){
                 let productId=Number(localStorage.getItem("userOrder").split(',')[i].split('/')[0]);
                 let productQ=Number(localStorage.getItem("userOrder").split(',')[i].split('/')[1]);
 
