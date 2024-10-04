@@ -762,7 +762,7 @@ sessionStorage.setItem("ADMIN_U_I",UI.length)//use index
 
 
 let ADMIN_PTC_H=``;
-let ADMIN_PTC_Order=``;
+let ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 setInterval(()=>{
 
     if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !="" && UI.length != 0){
