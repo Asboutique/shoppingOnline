@@ -765,7 +765,7 @@ let ADMIN_PTC_H=``;
 let ADMIN_PTC_Order=``;
 setInterval(()=>{
 
-    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !=""){
+    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !="" && UI.length != 0){
 
         //home
         if(sessionStorage.getItem("ADMIN_C_I") != UI.length){ 
