@@ -259,7 +259,7 @@ let Delete_p=``;
 setInterval(()=>{
     
     
-    if(PI.length != 0 && PI[0].id != 0){
+    if(PI[0].id != 0){//PI.length != 0 && 
     
         //home
         if(sessionStorage.getItem("C_I") != PI.length || localStorage.getItem("reset_PI")==='true'){
@@ -765,7 +765,7 @@ let ADMIN_PTC_H=``;
 let ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 setInterval(()=>{
 
-    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !="" && UI.length != 0){
+    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !=""){//&&UI.length != 0
 
         //home
         if(sessionStorage.getItem("ADMIN_C_I") != UI.length){ 
