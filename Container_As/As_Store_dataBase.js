@@ -767,6 +767,8 @@ setInterval(()=>{
 
     if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !=""){//&&UI.length != 0
 
+
+        document.querySelector('.A_MCD_MAIN_SBD').innerHTML="A";//0
         //home
         if(sessionStorage.getItem("ADMIN_C_I") != UI.length){ 
             sessionStorage.setItem("ADMIN_C_I",UI.length)
@@ -825,6 +827,7 @@ setInterval(()=>{
         //A_MCD_MAIN_SBD
         if(localStorage.getItem("userPhoneNumber") != sessionStorage.getItem("userPhoneNumber")){
 
+            document.querySelector('.A_MCD_MAIN_SBD').innerHTML="B";//1
 
             sessionStorage.setItem("userPhoneNumber",localStorage.getItem("userPhoneNumber"))
 
