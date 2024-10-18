@@ -765,10 +765,8 @@ let ADMIN_PTC_H=``;
 let ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 setInterval(()=>{
 
-    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !=""&& UI.length != 0){
+    if(localStorage.getItem("ADMIN")==="true" && UI.length != 0 && UI[0].userName !=""){
 
-
-       
         //home
         if(sessionStorage.getItem("ADMIN_C_I") != UI.length){ 
             sessionStorage.setItem("ADMIN_C_I",UI.length)
@@ -824,21 +822,24 @@ setInterval(()=>{
 
         
 
+
+        
         //A_MCD_MAIN_SBD
         if(localStorage.getItem("userPhoneNumber") != sessionStorage.getItem("userPhoneNumber")){
 
+            
 
             sessionStorage.setItem("userPhoneNumber",localStorage.getItem("userPhoneNumber"))
 
             ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 
-            for(let i=0;i <= localStorage.getItem("userOrder").split(',').length;i++){
+            for(let i=0;i<localStorage.getItem("userOrder").split(',').length;i++){
                 let productId=Number(localStorage.getItem("userOrder").split(',')[i].split('/')[0]);
                 let productQ=Number(localStorage.getItem("userOrder").split(',')[i].split('/')[1]);
 
-            
-                for(let i=0;i <= PI.length;i++){
-                    if(productId===Number(PI[i].id){
+
+                for(let i=0;i<PI.length;i++){
+                    if(productId===Number(PI[i].id)){
 
                         //ADD COMMER TO PRICE
                         let price=`${PI[i].p}`;
@@ -909,7 +910,6 @@ setInterval(()=>{
 
     }
 })
-
 
 
 
