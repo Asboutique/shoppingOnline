@@ -765,7 +765,7 @@ let ADMIN_PTC_H=``;
 let ADMIN_PTC_Order=`<div class="A_MCD_MAIN_SBD_WB"></div>`;
 setInterval(()=>{
 
-    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !=""){//&&UI.length != 0
+    if(localStorage.getItem("ADMIN")==="true" && UI[0].userName !="" && UI.length != 0){
 
 
        
@@ -825,7 +825,7 @@ setInterval(()=>{
         
 
         //A_MCD_MAIN_SBD
-        if(true){//localStorage.getItem("userPhoneNumber") != sessionStorage.getItem("userPhoneNumber")
+        if(localStorage.getItem("userPhoneNumber") != sessionStorage.getItem("userPhoneNumber")){
 
 
             sessionStorage.setItem("userPhoneNumber",localStorage.getItem("userPhoneNumber"))
@@ -838,7 +838,7 @@ setInterval(()=>{
 
             
                 for(let i=0;i <= PI.length;i++){
-                    if(productId===PI[i].id){
+                    if(productId===Number(PI[i].id){
 
                         //ADD COMMER TO PRICE
                         let price=`${PI[i].p}`;
